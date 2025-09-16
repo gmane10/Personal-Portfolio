@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauri Mane - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f0ff 0%, #e6e6fa 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #6b5b95, #9370db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h2 {
+            color: #6b5b95;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #d8bfd8;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        
+        .education-item, .project-item, .course-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #9370db;
+            padding-bottom: 5px;
+        }
+        
+        .education-item h3, .project-item h3, .course-item h3 {
+            color: #6b5b95;
+            margin-bottom: 5px;
+        }
+        
+        .date {
+            color: #9370db;
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill {
+            background: #e6e6fa;
+            color: #6b5b95;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .achievement-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .achievement-item:before {
+            content: "★";
+            color: #9370db;
+            position: absolute;
+            left: 0;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #9370db, #6b5b95);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(147, 112, 219, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(107, 91, 149, 0.5);
+        }
+        
+        .btn-container {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <h1>Gauri Mane</h1>
+            <p>Aspiring Computer Science Engineer | Passionate about Digital Engagement, Content Writing and Creation</p>
+            <div class="contact-info">
+                <div><i class="fas fa-envelope"></i> gmane1009@gmail.com</div>
+                <div><i class="fas fa-phone"></i> +91 8799855810</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>B.Tech, Computer Science & Engineering</h3>
+                    <div class="date">2023 - 2027</div>
+                    <p>Pimpri Chinchwad University</p>
+                    <p>Currently in Third Year</p>
+                    <p>Percentage: 79.00%</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">C</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">VS Code</span>
+                </div>
+            </div>
+            
+            <div class="section full-width">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>IoT-Based Remote Plant Monitoring System</h3>
+                    <div class="date">Feb 2025 - Apr 2025</div>
+                    <p>Designed a low-cost system using Arduino UNO to monitor plant health metrics (soil moisture, temperature, humidity). Programmed sensor data collection in C++ using Arduino IDE.</p>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Voice Assistant</h3>
+                    <div class="date">Oct 2024 - Nov 2024</div>
+                    <p>Developed a voice-controlled assistant using speech_recognition and pyttsx3 to perform tasks like web searches, reminders, and system commands. Implemented NLP techniques for basic conversational interactions.</p>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Skincare Quiz App</h3>
+                    <div class="date">Oct 2024 - Nov 2024</div>
+                    <p>Designed a GUI-based quiz to recommend skincare routines using user-inputted skin type and concerns.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Achievements</h2>
+                <div class="achievement-item">
+                    3rd place in PCU's IDEATHONE 2024
+                </div>
+                <div class="achievement-item">
+                    Participated in IOT based project expo
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Courses</h2>
+                <div class="course-item">
+                    <h3>Foundations Of Cybersecurity</h3>
+                    <div class="date">Mar 2025</div>
+                    <p>Google, Online</p>
+                </div>
+                
+                <div class="course-item">
+                    <h3>Django Web Framework</h3>
+                    <div class="date">Mar 2025</div>
+                    <p>META, Online</p>
+                </div>
+                
+                <div class="course-item">
+                    <h3>Personal Productivity, Time Management And Prioritization</h3>
+                    <div class="date">Nov 2024</div>
+                    <p>Starweaver, Online</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <a href="javascript:window.print()" class="back-btn"><i class="fas fa-print"></i> Print Resume</a>
+            <a href="javascript:history.back()" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
