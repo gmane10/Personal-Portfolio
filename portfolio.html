@@ -1,276 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gauri Mane - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f0ff;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 40px 0;
-            flex-wrap: wrap;
-        }
-        
-        .header-text {
-            flex: 1;
-            min-width: 300px;
-            padding-right: 30px;
-        }
-        
-        .header-text h1 {
-            font-size: 3.5rem;
-            color: #6b5b95;
-            margin-bottom: 10px;
-        }
-        
-        .header-text h2 {
-            font-size: 1.5rem;
-            color: #9370db;
-            font-weight: 400;
-            margin-bottom: 30px;
-        }
-        
-        .about-me {
-            background-color: #e6e6fa;
-            padding: 25px;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .about-me h3 {
-            color: #6b5b95;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-        }
-        
-        .about-me p {
-            font-size: 1.1rem;
-            color: #555;
-        }
-        
-        .profile-image {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
-        }
-        
-        .profile-image img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 50%;
-            border: 8px solid #d8bfd8;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        
-        .portfolio-btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 40px;
-            background-color: #9370db;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(147, 112, 219, 0.4);
-        }
-        
-        .portfolio-btn:hover {
-            background-color: #6b5b95;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(107, 91, 149, 0.5);
-        }
-        
-        .main-content {
-            display: flex;
-            gap: 40px;
-            margin: 50px 0;
-            flex-wrap: wrap;
-        }
-        
-        .education-skills {
-            flex: 1;
-            min-width: 300px;
-            background-color: #e6e6fa;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .education-skills h3 {
-            color: #6b5b95;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #d8bfd8;
-        }
-        
-        .education-item {
-            margin-bottom: 25px;
-        }
-        
-        .education-item h4 {
-            color: #9370db;
-            font-size: 1.3rem;
-            margin-bottom: 5px;
-        }
-        
-        .education-item p {
-            color: #555;
-        }
-        
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        
-        .skill {
-            background-color: #d8bfd8;
-            color: #6b5b95;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-weight: 500;
-        }
-        
-        footer {
-            background-color: #6b5b95;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-            border-radius: 10px;
-            margin-top: 50px;
-            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        
-        .contact-info p {
-            margin: 10px 0;
-            font-size: 1.1rem;
-        }
-        
-        .contact-info i {
-            margin-right: 10px;
-            color: #d8bfd8;
-        }
-        
-        .closing {
-            font-size: 1.5rem;
-            margin-top: 20px;
-            color: #f5f0ff;
-            font-style: italic;
-        }
-        
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-            }
-            
-            .header-text {
-                padding-right: 0;
-                margin-bottom: 30px;
-            }
-            
-            .header-text h1 {
-                font-size: 2.5rem;
-            }
-            
-            .profile-image img {
-                max-width: 250px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauri Mane - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: rgb(114, 111, 111);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+    .container {
+      width: 100%;
+      max-width: 960px;
+      background-color: rgb(186, 154, 226);
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      padding: 2rem 3rem;
+    }
+    .navigation {
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 1rem;
+    }
+    .navigation ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .navigation a {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #4b5563;
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+    .navigation a:hover {
+      color: #6b5b95;
+    }
+    .section { display: none; }
+    .section.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Profile */
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+    .profile-container img {
+      border-radius: 9999px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border: 4px solid #d8bfd8;
+    }
+    .profile-text h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin: 0.5rem 0;
+    }
+    .profile-text p { color: #4b5563; font-weight: 500; }
+    .bio {
+      color: #374151;
+      margin-top: 1rem;
+      max-width: 65ch;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+    }
+    /* Grid Layout */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .grid-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1024px) {
+      .grid-layout { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    /* Lists */
+    .list-container {
+      list-style: disc;
+      margin-left: 1rem;
+      line-height: 1.5rem;
+    }
+    /* Project Card */
+    .project-card {
+      background-color: #f9fafb;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+    }
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #6b5b95;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact-link:hover { text-decoration: underline; }
+    /* Education Table */
+    .table-wrapper {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      min-width: 300px;
+    }
+    th, td {
+      border: 1px solid #4b5563;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #6b5b95;
+      color: white;
+    }
+    td {
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-text">
-                <h1>Gauri Mane</h1>
-                <h2>A Computer Science Student and a Part Time Content Creator</h2>
-                
-                <div class="about-me">
-                    <h3>About Me</h3>
-                    <p>Hello! I'm Gauri, a passionate Computer Science student with a keen interest in software development, web technologies, and digital content creation. I enjoy solving complex problems and turning ideas into reality. When I'm not studying or coding, I create  content about Beauty Theory, Manifestation and Mindset, Emotional and Physical Wellbeing and Goal Achievement.</p>
-                    <p>I believe in continuous learning and sharing knowledge with the community. My goal is to merge technical expertise with creative expression, developing innovative digital solutions while empowering others through content that nurtures holistic wellbeing and personal growth.</p>
-                </div>
-                
-                <a href="resume.html" target="_blank" class="portfolio-btn">My Resume</a>
-            </div>
-            
-            <div class="profile-image">
-                <img src="file:///C:/Users/Gouri/OneDrive/Desktop/AWP/AWP%20Images/Main_image.jpeg" alt="Gauri Mane">
-            </div>
-        </header>
-        
-        <div class="main-content">
-            <div class="education-skills">
-                <h3>Education</h3>
-                
-                <div class="education-item">
-                    <h4>Bachelor of Technology in Computer Science Engineering</h4>
-                    <p>Pimpri Chinchwad University, 2023 - Present</p>
-                    <p>Current SGPA: 7.9/10.0</p>
-                </div>
-                
-                <div class="education-item">
-                    <h4>Higher Secondary Certificate</h4>
-                    <p>Sangmeshwar College, 2021 - 2023</p>
-                    <p>Percentage: 63%</p>
-                </div>
-                
-                <h3 style="margin-top: 40px;">Skills</h3>
-                
-                <div class="skills">
-                    <span class="skill">HTML/CSS</span>
-                    <span class="skill">JavaScript</span>
-                    <span class="skill">Python</span>
-                    <span class="skill">Java</span>
-                    <span class="skill">C++</span>
-                    <span class="skill">C</span>
-                    <span class="skill">SQL</span>
-                    <span class="skill">Git</span>
-                    <span class="skill">Content Creation</span>
-                    <span class="skill">Video Editing</span>
-                </div>
-            </div>
+
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navigation">
+      <ul>
+        <li><a href="#about" onclick="showSection('about')">About</a></li>
+        <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#education" onclick="showSection('education')">Education</a></li>
+        <li><a href="#hobbies" onclick="showSection('hobbies')">Hobbies</a></li>
+        <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- About -->
+    <div id="about" class="section active">
+      <div class="profile-container">
+        <img src="Image.jpg" alt="Gauri Mane">
+        <div class="profile-text">
+          <h1>Gauri Mane</h1>
+          <p>Computer Science Student & Content Creator</p>
+          <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem;">
+            Pune, Maharashtra | Age: 19
+          </p>
+          <p class="bio">
+            Hello! I'm Gauri, a passionate Computer Science student with a keen interest in software development, web technologies, and digital content creation. I enjoy solving complex problems and turning ideas into reality. When I'm not studying or coding, I create content about Beauty Theory, Manifestation and Mindset, Emotional & Physical Wellbeing, and Goal Achievement.  
+            <br><br>
+            My goal is to merge technical expertise with creative expression, developing innovative digital solutions while empowering others through content that nurtures holistic wellbeing and personal growth.
+          </p>
         </div>
-        
-        <footer>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</p>
-                <p><i class="fas fa-phone"></i> +91 8799855810</p>
-                <p><i class="fas fa-envelope"></i> gauri.s.mane10@gmail.com</p>
-            </div>
-            <p class="closing">Let's get in touch soon!</p>
-        </footer>
+      </div>
     </div>
+
+    <!-- Skills -->
+    <div id="skills" class="section">
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1.5rem;">Skills</h2>
+      <div class="grid-layout">
+        <div>
+          <h3 style="font-weight: 600; color: #374151; margin-bottom: 0.5rem;">Programming</h3>
+          <ul class="list-container">
+            <li>C</li><li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-weight: 600; color: #374151; margin-bottom: 0.5rem;">Web</h3>
+          <ul class="list-container">
+            <li>HTML</li><li>CSS</li><li>SQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-weight: 600; color: #374151; margin-bottom: 0.5rem;">Other Skills</h3>
+          <ul class="list-container">
+            <li>Git</li><li>Content Creation</li><li>Video Editing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="section">
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1.5rem;">Projects</h2>
+      <div class="grid-layout">
+        <div class="project-card">
+          <h3 style="font-weight: 600; color: #1f2937; font-size: 1.125rem; margin-bottom: 0.5rem;">Project 1</h3>
+          <p style="color: #4b5563; margin-bottom: 1rem;">Personal Portfolio Website</p>
+          <a href="https://github.com/gmane10/Personal-Portfolio/blob/f8a402b9126aba617ab9984c29ee633c40f8549e/portfolio.html" target="_blank" class="contact-link">GitHub Link &rarr;</a>
+        </div>
+        <div class="project-card">
+          <h3 style="font-weight: 600; color: #1f2937; font-size: 1.125rem; margin-bottom: 0.5rem;">Project 2</h3>
+          <p style="color: #4b5563; margin-bottom: 1rem;">Content Creation Channel</p>
+          <a href="https://www.youtube.com/@prettyhypothesis" target="_blank" class="contact-link">Youtube Link &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education" class="section">
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1.5rem;">Education</h2>
+      <div class="table-wrapper">
+        <table>
+          <tr><th>Qualification</th><th>Institute</th><th>Year</th><th>Marks / CGPA</th></tr>
+          <tr><td>B.Tech CSE</td><td>Pimpri Chinchwad University</td><td>2023 - Present</td><td>7.9 SGPA</td></tr>
+          <tr><td>12th</td><td>Sangmeshwar College</td><td>2021 - 2023</td><td>63%</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Hobbies -->
+    <div id="hobbies" class="section">
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1.5rem;">Hobbies</h2>
+      <ul class="list-container">
+          <li>📚 Reading</li>
+          <li>🎶 Listening to Music</li>
+          <li>🏋️ Working out</li>
+          <li>💄 Makeup</li>
+          <li>🧴 Skincare</li>
+          <li>🎨 Painting</li>
+          <li>✏️ Drawing</li>
+          <li>🌸 Rangoli</li>
+          <li>🪙 Unique Collection</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="section">
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1.5rem;">Contact</h2>
+      <div style="line-height: 1.5rem; color: #374151;">
+        <p><a href="tel:+918799855810" class="contact-link">📞 +91 8799855810</a></p>
+        <p><a href="mailto:gauri.s.mane10@gmail.com" class="contact-link">✉️ gauri.s.mane10@gmail.com</a></p>
+        <p><span style="color:#6b5b95;">📍 Pune, Maharashtra, India</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      const activeSection = document.getElementById(sectionId);
+      if (activeSection) activeSection.classList.add('active');
+    }
+    window.addEventListener('load', () => {
+      const hash = window.location.hash.substring(1);
+      if (hash && document.getElementById(hash)) {
+        showSection(hash);
+      } else {
+        showSection('about');
+      }
+    });
+  </script>
+
 </body>
 </html>
